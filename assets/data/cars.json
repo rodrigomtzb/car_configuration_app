@@ -1,0 +1,60 @@
+[
+  {
+    "id": "sedan",
+    "name": "Sed\u00e1n",
+    "model": "../../../../../assets/models/sedan.glb",
+    "colors": [
+      "#FF0000",
+      "#FFFFFF",
+      "#1E90FF"
+    ],
+    "interiors": [
+      "black",
+      "beige",
+      "gray"
+    ],
+    "occupants": [
+      2,
+      4,
+      5
+    ]
+  },
+  {
+    "id": "suv",
+    "name": "SUV",
+    "model": "../models/suv.glb",
+    "colors": [
+      "#2F4F4F",
+      "#FFD700",
+      "#00BFFF"
+    ],
+    "interiors": [
+      "brown",
+      "black",
+      "white"
+    ],
+    "occupants": [
+      4,
+      5,
+      7
+    ]
+  },
+  {
+    "id": "pickup",
+    "name": "Pickup",
+    "model": "./assets/models/pickup.glb",
+    "colors": [
+      "#C0C0C0",
+      "#000000",
+      "#FF4500"
+    ],
+    "interiors": [
+      "black",
+      "gray"
+    ],
+    "occupants": [
+      2,
+      4
+    ]
+  }
+]
