@@ -1,8 +1,28 @@
 [
   {
+    "id": "pickup",
+    "name": "Pickup",
+    "model": "./assets/models/pickup.glb",
+    "preview": "../../../../assets/images/pickup.png",
+    "colors": [
+      "#C0C0C0",
+      "#000000",
+      "#FF4500"
+    ],
+    "interiors": [
+      "black",
+      "gray"
+    ],
+    "occupants": [
+      2,
+      4
+    ]
+  },
+  {
     "id": "sedan",
     "name": "Sed\u00e1n",
     "model": "../../../../../assets/models/sedan.glb",
+    "preview": "../../../../assets/images/sedan.webp",
     "colors": [
       "#FF0000",
       "#FFFFFF",
@@ -23,6 +43,7 @@
     "id": "suv",
     "name": "SUV",
     "model": "../models/suv.glb",
+    "preview": "../../../../assets/images/suv.png",
     "colors": [
       "#2F4F4F",
       "#FFD700",
@@ -37,24 +58,6 @@
       4,
       5,
       7
-    ]
-  },
-  {
-    "id": "pickup",
-    "name": "Pickup",
-    "model": "./assets/models/pickup.glb",
-    "colors": [
-      "#C0C0C0",
-      "#000000",
-      "#FF4500"
-    ],
-    "interiors": [
-      "black",
-      "gray"
-    ],
-    "occupants": [
-      2,
-      4
     ]
   }
 ]

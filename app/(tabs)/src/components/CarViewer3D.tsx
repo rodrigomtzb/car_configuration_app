@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+/*import React, { useEffect, useRef, useState } from 'react';
 import { View, ActivityIndicator } from 'react-native';
 import { EngineView, useEngine, SceneLoader, ArcRotateCamera, Vector3, Color3, HemisphericLight, MeshBuilder, PBRMaterial } from '@babylonjs/react-native';
 import { Asset } from 'expo-asset';
@@ -84,3 +84,4 @@ export default function CarViewer3D({ modelSource, color = '#FFFFFF', autoRotate
     </View>
   );
 }
+*/

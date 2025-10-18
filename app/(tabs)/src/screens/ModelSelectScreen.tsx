@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FlatList, Text, TouchableOpacity, View } from 'react-native';
+import { FlatList, Image, Text, TouchableOpacity, View } from 'react-native';
 import cars from '../../../../assets/data/cars.json';
 import { useCarStore } from '../store/useCarStore';
 
@@ -7,6 +7,13 @@ export default function ModelSelectScreen({ navigation }: any) {
   const setModel = useCarStore((state) => state.setModel);
 
   const [selection, setSelection] = useState({});
+
+  const imageMap: Record<string, any> = {
+    pickup: require('@/assets/images/pickup.png'),
+    sedan:  require('@/assets/images/sedan.jpg'),
+    suv:    require('@/assets/images/suv.jpg'),
+    
+  };
 
   return (
     <View style={{ flex:1, padding:16, backgroundColor:'#0b0b12' }}>
@@ -21,7 +28,11 @@ export default function ModelSelectScreen({ navigation }: any) {
             <View style={{ flex:1, alignItems:'center', justifyContent:'center' }}>
               <Text style={{ color:'#fff', marginBottom:8 }}>{item.name}</Text>
               <View style={{ width:180, height:120, backgroundColor:'#222', borderRadius:8, alignItems:'center', justifyContent:'center' }}>
-                <Text style={{ color:'#888' }}>3D Preview</Text>
+                {/* <Text style={{ color:'#888' }}>3D Preview</Text> */}
+                <Image
+                        source={imageMap[item.id]} 
+                        style={{ width:180, height:120, backgroundColor:'#222', borderRadius:8, alignItems:'center', justifyContent:'center' }}
+                      />
               </View>
             </View>
           </TouchableOpacity>

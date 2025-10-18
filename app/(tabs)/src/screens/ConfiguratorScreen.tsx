@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+/*import React, { useRef } from 'react';
 import { StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
 import { WebView } from 'react-native-webview';
 import { useCarStore } from '../store/useCarStore';
@@ -77,7 +77,7 @@ const styles = StyleSheet.create({
   row: { flexDirection:'row', justifyContent:'space-between', marginTop:12 },
   button: { backgroundColor:'#ff4d4f', padding:12, borderRadius:10, flex:1, alignItems:'center', marginHorizontal:6 },
   buttonText: { color:'#fff', fontWeight:'600' }
-});
+}); */
 
 
 /*
@@ -150,3 +150,23 @@ const styles = StyleSheet.create({
 });
 
 */
+
+
+import React from 'react';
+import { StyleSheet, View } from 'react-native';
+import ConfiguratorTabs from '../navigation/ConfiguratorTabs';
+
+export default function ConfiguratorScreen() {
+  return (
+    <View style={styles.container}>
+      <ConfiguratorTabs />
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fafafa',
+  },
+});
